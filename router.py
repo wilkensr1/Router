@@ -21,7 +21,7 @@ def read_csv(file_path):
 # Geocode addresses with retries
 def geocode_address(address, max_retries=3):
     geolocator = Nominatim(user_agent="route_optimizer")
-    gmaps = googlemaps.Client(key='AIzaSyDQNm3hFsmbSz44zF8mh7kKl4LIy6QuBPA')
+    gmaps = googlemaps.Client(key=[Google API Key]')
 
     for attempt in range(max_retries):
         try:
